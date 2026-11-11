@@ -7,7 +7,6 @@ const navItems = [
   { label: "A trilha", href: "#trilha" },
   { label: "Laboratório", href: "#laboratorio" },
   { label: "Plano de ação", href: "#plano" },
-  { label: "Para professores", href: "#professores" },
 ];
 
 function Header() {
@@ -16,15 +15,25 @@ function Header() {
   return (
     <header className="site-header">
       <div className="site-header__content">
+
+        {/* Identidade visual */}
         <a href="#inicio" className="header-brand">
           <span className="header-brand__mark">r.</span>
 
-          <span className="header-brand__identity">
-            <strong>ramos</strong>
-            <small>Computação em comunidade</small>
+          <strong className="header-brand__name">
+            ramos
+          </strong>
+
+          <span className="header-brand__tagline">
+            COMPUTAÇÃO
+            <br />
+            EM
+            <br />
+            COMUNIDADE
           </span>
         </a>
 
+        {/* Menu mobile */}
         <button
           type="button"
           className="header-menu-button"
@@ -38,6 +47,7 @@ function Header() {
           </span>
         </button>
 
+        {/* Navegação principal */}
         <nav
           id="header-navigation"
           className={`header-nav ${menuOpen ? "header-nav--open" : ""}`}
@@ -53,6 +63,16 @@ function Header() {
             </a>
           ))}
         </nav>
+
+        {/* Botão para professores */}
+        <a
+          href="#professores"
+          className={`header-cta ${menuOpen ? "header-cta--open" : ""}`}
+          onClick={() => setMenuOpen(false)}
+        >
+          Para professores
+        </a>
+
       </div>
     </header>
   );

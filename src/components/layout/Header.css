@@ -1,140 +1,211 @@
+/* 1. Importa a DM Sans do Google Fonts (pesos 400, 500 e 700) */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* Header principal */
 
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 100;
-  background: #fafbf8;
-  border-bottom: 1px solid #e1e5df;
+  z-index: 1000;
+
+  width: 100%;
+  background-color: #fafbf7;
+  border-bottom: 1px solid #dce3d9;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .site-header__content {
-  max-width: 1200px;
-  min-height: 80px;
+  width: 100%;
+  min-height: 85px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 42px;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
-}
-
-/* Identidade da liga */
-
-.header-brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-
-  text-decoration: none;
-  color: #22392f;
-}
-
-.header-brand__mark {
   display: grid;
-  place-items: center;
-
-  width: 44px;
-  height: 44px;
-
-  background: #244d3c;
-  color: white;
-
-  border-radius: 10px;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.header-brand__identity {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
-
-.header-brand__identity strong {
-  font-size: 20px;
-  letter-spacing: -0.5px;
-}
-
-.header-brand__identity small {
-  font-size: 10px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-/* Navegação */
-
-.header-nav {
-  display: flex;
+  grid-template-columns: minmax(0, 1.08fr) auto minmax(0, 0.92fr);
+  grid-template-areas: "brand nav cta";
   align-items: center;
   gap: 24px;
 }
 
-.header-nav a {
-  color: #3d4d44;
+/* Identidade visual */
+
+.header-brand {
+  grid-area: brand;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  width: fit-content;
   text-decoration: none;
-  font-size: 14px;
+  color: #19392e;
+  white-space: nowrap;
+}
+
+.header-brand__mark {
+  display: flex;
+  place-items: center;
+
+  width: 36px;
+  height: 39px;
+  flex-shrink: 0;
+
+  background-color: #143b2e;
+  color: #d6ef84;
+
+  border-radius: 8px;
+  font-size: 30px;
+  font-weight: 800;
+  padding: 9px 9px 12px 9px;
+}
+
+.header-brand__name {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.header-brand__tagline {
+  margin-left: 14px;
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: 1.2px;
   font-weight: 500;
+  color: #19392e;
+}
+
+/* Navegação central */
+
+.header-nav {
+  grid-area: nav;
+
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  white-space: nowrap;
+}
+
+.header-nav a {
+  color: #19392e;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 400;
 
   transition: color 0.2s ease;
 }
 
 .header-nav a:hover {
-  color: #28744c;
+  color: #527b37;
 }
 
-.header-nav a:focus-visible,
+/* Botão Para professores */
+
+.header-cta {
+  grid-area: cta;
+  justify-self: end;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 40px;
+  padding: 0 20px;
+
+  border: 1px solid #19392e;
+  border-radius: 6px;
+
+  color: #19392e;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+
+  transition: background-color 0.2s ease;
+}
+
+.header-cta:hover {
+  background-color: #e9eee5;
+}
+
+/* Acessibilidade */
+
 .header-brand:focus-visible,
+.header-nav a:focus-visible,
+.header-cta:focus-visible,
 .header-menu-button:focus-visible {
-  outline: 2px solid #28744c;
+  outline: 2px solid #527b37;
   outline-offset: 4px;
 }
 
-/* Botão do menu móvel */
+/* Menu mobile */
 
 .header-menu-button {
   display: none;
+  grid-area: toggle;
+
   background: transparent;
   border: none;
-  color: #22392f;
+  color: #19392e;
+
   font-size: 26px;
   cursor: pointer;
 }
 
 /* Responsividade */
 
-@media (max-width: 850px) {
+@media (max-width: 1200px) {
   .site-header__content {
-    min-height: 72px;
-    padding: 0 20px;
+    min-height: 78px;
+
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "brand toggle"
+      "nav nav"
+      "cta cta";
+      margin-top: 25px;
   }
 
   .header-menu-button {
     display: block;
   }
 
-  .header-nav {
+  .header-nav,
+  .header-cta {
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-
-    padding: 12px 20px;
-    background: #fafbf8;
-    border-bottom: 1px solid #e1e5df;
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.06);
   }
 
   .header-nav--open {
     display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+
+    padding: 16px 0;
+    border-top: 1px solid #dce3d9;
   }
 
   .header-nav a {
-    padding: 14px 8px;
+    padding: 12px 0;
+  }
+
+  .header-cta--open {
+    display: flex;
+    justify-self: stretch;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header__content {
+    padding: 0 16px;
+  }
+
+  .header-brand__name {
+    font-size: 26px;
+  }
+
+  .header-brand__tagline {
+    display: none;
   }
 }
