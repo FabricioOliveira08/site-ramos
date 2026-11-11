@@ -1,0 +1,31 @@
+
+/* Container do título */
+.section-title {
+  width: 100%;
+}
+
+/* Texto superior - Eyebrow */
+.section-title__label {
+  color: #5e7446;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  margin: 0 0 16px;
+}
+
+/* Título principal */
+.section-title__heading {
+  font-size: clamp(30px, 3.1vw, 43px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1.6px;
+  margin: 0 0 22px;
+}
+
+/* Descrição */
+.section-title__description {
+  color: #54665d;
+  max-width: 610px;
+  margin: 0;
+}
+
