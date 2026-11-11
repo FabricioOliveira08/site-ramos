@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+
+footer.wrap {
+    width: min(1180px, calc(100% - 80px));
+  
+    margin: auto;
+    padding: 30px 0px;
+
+    font-family: 'DM Sans', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     gap: 28px;
+
+    background: transparent;
+    border-top: 1px solid #dce3d9;
+}
+
+/* Identidade */
+
+footer.wrap .brand {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    flex: 0 0 25%;
+
+    color: #19392e;
+    text-decoration: none;
+    font-size: 29px;
+    font-weight: 700;
+}
+
+footer.wrap .mark {
+    display: flex;
+    place-items: center;
+
+    width: 36px;
+    height: 39px;
+    flex-shrink: 0;
+
+    background-color: #143b2e;
+    color: #d6ef84;
+
+    border-radius: 8px;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 9px 9px 12px 9px;
+}
+
+/* Slogan */
+
+footer.wrap > p:first-of-type {
+    flex: 0 0 33%;
+}
+
+/* Textos */
+
+footer.wrap p {
+    margin: 0;
+    color: #40554c;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* Responsividade */
+
+@media (max-width: 850px) {
+    footer.wrap {
+        width: calc(100% - 40px);
+        margin-top: 48px;
+        padding-top: 30px;
+
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    footer.wrap .brand,
+    footer.wrap > p:first-of-type {
+        flex: none;
+    }
+}
