@@ -1,0 +1,53 @@
+
+/* Container do encontro */
+
+.accordion {
+  border-bottom: 1px solid #bbc8b6;
+}
+
+/* Cabeçalho expansível */
+
+.accordion summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 23px 0;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Subtítulo do encontro */
+
+.accordion summary small {
+  display: block;
+  font-size: 14px;
+  color: #54665d;
+  font-weight: 400;
+  margin-top: 3px;
+}
+
+/* Símbolo de expansão */
+
+.accordion summary b {
+  margin-left: auto;
+}
+
+/* Conteúdo expandido */
+
+.accordion .module-body {
+  padding: 0 55px 23px;
+  max-width: 820px;
+}
+
+/* Acessibilidade */
+
+.accordion summary:focus-visible {
+  outline: 2px solid #143b2e;
+  outline-offset: 4px;
+}
