@@ -1,0 +1,140 @@
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fafbf8;
+  border-bottom: 1px solid #e1e5df;
+}
+
+.site-header__content {
+  max-width: 1200px;
+  min-height: 80px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+/* Identidade da liga */
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  text-decoration: none;
+  color: #22392f;
+}
+
+.header-brand__mark {
+  display: grid;
+  place-items: center;
+
+  width: 44px;
+  height: 44px;
+
+  background: #244d3c;
+  color: white;
+
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-brand__identity {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.header-brand__identity strong {
+  font-size: 20px;
+  letter-spacing: -0.5px;
+}
+
+.header-brand__identity small {
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Navegação */
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header-nav a {
+  color: #3d4d44;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: color 0.2s ease;
+}
+
+.header-nav a:hover {
+  color: #28744c;
+}
+
+.header-nav a:focus-visible,
+.header-brand:focus-visible,
+.header-menu-button:focus-visible {
+  outline: 2px solid #28744c;
+  outline-offset: 4px;
+}
+
+/* Botão do menu móvel */
+
+.header-menu-button {
+  display: none;
+  background: transparent;
+  border: none;
+  color: #22392f;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Responsividade */
+
+@media (max-width: 850px) {
+  .site-header__content {
+    min-height: 72px;
+    padding: 0 20px;
+  }
+
+  .header-menu-button {
+    display: block;
+  }
+
+  .header-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+
+    padding: 12px 20px;
+    background: #fafbf8;
+    border-bottom: 1px solid #e1e5df;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.06);
+  }
+
+  .header-nav--open {
+    display: flex;
+  }
+
+  .header-nav a {
+    padding: 14px 8px;
+  }
+}

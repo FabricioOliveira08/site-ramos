@@ -1,8 +1,10 @@
+import Header from "./components/layout/Header";
 import "./App.css";
 
 function App() {
   return (
     <div className="app">
+      <Header />
       <main className="app-main">
         <section className="app-placeholder">
           <h1>Projeto Ramos</h1>
