@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+.ribbon {
+    background: #d6ef84;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Faixa de princípios */
+
+.ribbon .wrap {
+  width: min(1180px, calc(100% - 80px));
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  padding-block: 19px;
+  color: #40554c;
+}
+
+/* Símbolo antes dos textos */
+
+.ribbon span::before {
+  content: "+";
+  margin-right: 16px;
+}

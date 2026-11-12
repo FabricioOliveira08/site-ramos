@@ -1,6 +1,7 @@
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import Hero from "./sections/Hero";
+import PrinciplesBar from "./sections/PrinciplesBar";
 
 import "./App.css";
 
@@ -11,6 +12,7 @@ function App() {
 
       <main id="conteudo" className="app-main">
         <Hero />
+        <PrinciplesBar />
       </main>
 
       <Footer />
