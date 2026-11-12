@@ -59,7 +59,7 @@ export const pilotModules = [
       },
       {
         label: "Atividade",
-        text: "escrever o algoritmo de preparação de uma oficina e testar as instruções com outra dupla.",
+        text: "Analisar uma regra de vagas e criar três casos de teste: abaixo, igual e acima do limite.",
       },
       {
         label: "Evidência",

@@ -5,7 +5,6 @@ import "./Header.css";
 const navItems = [
   { label: "A proposta", href: "#proposta" },
   { label: "A trilha", href: "#trilha" },
-  { label: "Laboratório", href: "#laboratorio" },
   { label: "Plano de ação", href: "#plano" },
 ];
 

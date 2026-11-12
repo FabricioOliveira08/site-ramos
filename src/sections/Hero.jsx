@@ -29,8 +29,8 @@ function Hero() {
         </p>
 
         <div className="hero__actions">
-          <Button href="#laboratorio" variant="primary">
-            Experimentar o primeiro desafio
+          <Button href="#trilha" variant="primary">
+            Conhecer a trilha piloto
           </Button>
 
           <Button href="#proposta" variant="text">
