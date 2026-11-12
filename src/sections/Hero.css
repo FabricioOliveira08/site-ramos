@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* Estrutura principal do Hero */
+
+.hero.wrap {
+  width: min(1180px, calc(100% - 80px));
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  padding-block: 76px 80px;
+  align-items: center;
+  font-family: 'DM Sans', sans-serif;
+}
+
+
+/* Título principal */
+
+.hero__title {
+  font-size: clamp(44px, 4.9vw, 70px);
+  line-height: 1.06;
+  letter-spacing: -3px;
+  margin: 0 0 27px;
+  font-weight: 500;
+  color: #35413b;
+}
+
+h1 em {
+  font-style: normal;
+  color: #597936;
+}
+
+/* Área dos botões */
+
+.hero__actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-block: 26px;
+}
+
+
+/* Texto acima do título */
+.hero__eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  margin-bottom: 25px;
+}
+
+/* Descrição principal */
+.hero__description {
+  font-size: 18px;
+  max-width: 490px;
+  color: #54665d;
+}
+
+/* Aviso institucional */
+.hero__disclaimer {
+  font-size: 12px;
+  color: #54665d;
+  max-width: 420px;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 1000px) {
+  .hero.wrap {
+    width: calc(100% - 48px);
+    gap: 35px;
+  }
+}

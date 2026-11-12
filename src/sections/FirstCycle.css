@@ -1,0 +1,105 @@
+
+/* Painel principal */
+.path-board {
+  background: #143b2e;
+  color: #fff;
+  padding: 34px 25px;
+  border-radius: 12px;
+  transform: rotate(1deg);
+  box-shadow: 12px 14px 0 #e7eddf;
+}
+
+/* Cabeçalho */
+.board-head {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #47705c;
+    padding-bottom: 19px;
+    font-size: 11px;
+    letter-spacing: 1.6px;
+    color: #c7d9c4;
+}
+
+/* Linhas das etapas */
+.path-row {
+  display: flex;
+  gap: 22px;
+  position: relative;
+  padding-top: 36px;
+}
+
+/* Rodapé */
+.board-foot {
+    margin-top: 33px;
+    padding-top: 22px;
+    border-top: 1px solid #47705c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* Círculos */
+.path-num {
+    flex-shrink: 0;
+    width: 39px;
+    height: 39px;
+    border: 1px solid #688372;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 13px;
+    color: var(--lime, #d6ef84);
+}
+
+/* Títulos das etapas */
+.path-row h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    font-weight: 500;
+}
+
+/* Texto destacado do rodapé */
+.board-foot strong {
+    color: var(--lime, #d6ef84);
+    font-weight: 500;
+}
+
+/* Texto secundário do rodapé */
+.board-foot span {
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+/* Linhas verticais entre os círculos */
+
+.path-row:not(:nth-last-child(2))::after {
+  content: "";
+  position: absolute;
+
+  width: 1px;
+  background: #688372;
+
+  left: 19px;
+  top: calc(36px + 39px);
+  bottom: -36px;
+
+  pointer-events: none;
+}
+
+
+
+/* Texto "COMEÇAMOS AQUI" */
+.path-board .tag {
+    color: var(--lime, #d6ef84);
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+/* Descrições das etapas */
+.path-row p {
+    font-size: 13px;
+    color: #c3d4c8;
+    margin: 0 0 8px;
+}
