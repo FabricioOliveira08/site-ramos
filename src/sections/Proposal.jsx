@@ -33,10 +33,7 @@ function Proposal() {
         <strong>
           Nosso primeiro público, como proposta:
         </strong>{" "}
-        estudantes do Campus IV iniciantes em programação.
-        Materiais para crianças e adaptações específicas
-        para neurodivergência constituem uma frente
-        posterior, com avaliação pedagógica própria.
+        estudantes do Campus IV iniciantes em programação e ingressantes de LCC e SI.
       </div>
     </section>
   );

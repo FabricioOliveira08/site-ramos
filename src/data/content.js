@@ -44,3 +44,86 @@ export const proposalPillars = [
       "Registrar dificuldades e aprendizagens antes de ampliar a equipe, abrir novas frentes ou buscar parcerias.",
   },
 ];
+
+
+
+export const pilotModules = [
+  {
+    number: "01",
+    title: "Sequências e decomposição",
+    subtitle: "Transformar um objetivo em passos claros",
+    details: [
+      {
+        label: "Objetivo",
+        text: "dividir um problema simples e ordenar instruções sem ambiguidades.",
+      },
+      {
+        label: "Atividade",
+        text: "escrever o algoritmo de preparação de uma oficina e testar as instruções com outra dupla.",
+      },
+      {
+        label: "Evidência",
+        text: "sequência revisada e explicação de uma ambiguidade corrigida.",
+      },
+    ],
+    schedule:
+      "10 min de situação-problema · 15 min de explicação · 25 min de prática · 10 min de conversa",
+  },
+  {
+    number: "02",
+    title: "Condições e decisões",
+    subtitle: "Entender como uma regra muda o resultado",
+    details: [
+      {
+        label: "Objetivo",
+        text: "usar SE / SENÃO e comparar valores.",
+      },
+      {
+        label: "Atividade",
+        text: "experimentar o laboratório abaixo e criar três casos de teste para uma regra de vagas.",
+      },
+      {
+        label: "Evidência",
+        text: "prever os resultados nos casos abaixo, igual e acima do limite.",
+      },
+    ],
+  },
+  {
+    number: "03",
+    title: "Repetições e depuração",
+    subtitle: "Repetir com propósito, encontrar erros",
+    details: [
+      {
+        label: "Objetivo",
+        text: "reconhecer repetição, atualização e condição de parada.",
+      },
+      {
+        label: "Atividade",
+        text: "simular um contador de inscrições com cartões, verificar seu limite e corrigir um erro de contagem.",
+      },
+      {
+        label: "Evidência",
+        text: "rastreamento de valores e justificativa da correção.",
+      },
+    ],
+  },
+  {
+    number: "04",
+    title: "Um projeto para compartilhar",
+    subtitle: "Juntar as peças e apresentar o raciocínio",
+    details: [
+      {
+        label: "Objetivo",
+        text: "integrar sequência, decisão e repetição.",
+      },
+      {
+        label: "Entrega",
+        text: "algoritmo de controle de vagas de uma oficina, em pseudocódigo ou linguagem escolhida pelo grupo, com três testes documentados.",
+      },
+      {
+        label: "Fechamento",
+        text: "demonstração em dupla, feedback e registro do que precisa melhorar no próximo ciclo.",
+      },
+    ],
+  },
+];

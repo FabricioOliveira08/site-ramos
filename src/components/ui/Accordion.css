@@ -16,6 +16,7 @@
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
+  color: #35413b;
 }
 
 .accordion summary::-webkit-details-marker {
@@ -38,11 +39,18 @@
   margin-left: auto;
 }
 
+/* Número lateral */
+summary>span {
+  font-size: 13px;
+  color: #71815b;
+}
+
 /* Conteúdo expandido */
 
 .accordion .module-body {
   padding: 0 55px 23px;
   max-width: 820px;
+  color: #35413b;
 }
 
 /* Acessibilidade */

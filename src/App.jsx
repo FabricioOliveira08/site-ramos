@@ -3,6 +3,7 @@ import Footer from "./components/layout/Footer";
 import Hero from "./sections/Hero";
 import PrinciplesBar from "./sections/PrinciplesBar";
 import Proposal from "./sections/Proposal";
+import PilotTrail from "./sections/PilotTrail";
 
 import "./App.css";
 
@@ -15,6 +16,7 @@ function App() {
         <Hero />
         <PrinciplesBar />
         <Proposal />
+        <PilotTrail />
       </main>
 
       <Footer />

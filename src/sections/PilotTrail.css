@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+/* Seção Trilha Piloto */
+
+.pilot-trail {
+  background: #edf1e8;
+  padding-block: 86px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Container centralizado */
+
+.pilot-trail .wrap {
+  width: min(1180px, calc(100% - 80px));
+  margin: auto;
+}
+
+
+/* Lista dos encontros */
+
+.pilot-trail .modules {
+  border-top: 1px solid #bbc8b6;
+}
+
+/* Conteúdo expandido */
+
+.pilot-trail .module-body p {
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+
+/* Tempo previsto das atividades */
+
+.pilot-trail .timing {
+  font-size: 13px;
+  color: #54665d;
+}
+
+.access-box {
+    margin-top: 35px;
+    max-width: 810px;
+    color: #54665d;
+}
+
+.access-box h3 {
+    color: #35413b;
+    
+}
+
+/* Responsividade do container */
+
+@media (max-width: 1000px) {
+  .pilot-trail .wrap {
+    width: calc(100% - 48px);
+  }
+}
