@@ -4,6 +4,7 @@ import Hero from "./sections/Hero";
 import PrinciplesBar from "./sections/PrinciplesBar";
 import Proposal from "./sections/Proposal";
 import PilotTrail from "./sections/PilotTrail";
+import ActionPlan from "./sections/ActionPlan";
 
 import "./App.css";
 
@@ -17,6 +18,7 @@ function App() {
         <PrinciplesBar />
         <Proposal />
         <PilotTrail />
+        <ActionPlan />
       </main>
 
       <Footer />

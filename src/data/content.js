@@ -127,3 +127,36 @@ export const pilotModules = [
     ],
   },
 ];
+
+
+
+export const actionPlanSteps = [
+  {
+    period: "SEMANA 1",
+    title: "Delimitar",
+    description:
+      "Confirmar público, disponibilidade do trio e objetivo do piloto. Levar a proposta a um professor.",
+    output: "escopo de uma página.",
+  },
+  {
+    period: "SEMANA 2",
+    title: "Ensaiar",
+    description:
+      "Preparar o encontro 1 e testar os exercícios entre os fundadores antes de convidar participantes.",
+    output: "roteiro revisado.",
+  },
+  {
+    period: "SEMANAS 3–6",
+    title: "Realizar",
+    description:
+      "Conduzir um encontro por semana. Revisar o seguinte a partir das dificuldades observadas.",
+    output: "quatro encontros e projetos.",
+  },
+  {
+    period: "AO FINAL DO CICLO",
+    title: "Avaliar",
+    description:
+      "Reunir feedback e evidências de aprendizagem. Decidir se repetimos, ajustamos ou expandimos.",
+    output: "relato curto de resultados.",
+  },
+];

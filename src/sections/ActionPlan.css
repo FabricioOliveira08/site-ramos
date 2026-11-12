@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* Seção Plano de Ação */
+
+.action-plan {
+  background: #143b2e;
+  color: #fafbf7;
+  padding-block: 86px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Container */
+
+.action-plan .wrap {
+  width: min(1180px, calc(100% - 80px));
+  margin: auto;
+}
+
+/* Cabeçalho da seção */
+
+.action-plan .section-title {
+  max-width: 680px;
+  margin-bottom: 42px;
+}
+
+.action-plan .section-title__label {
+  color: #d6ef84;
+}
+
+.action-plan .section-title__description {
+  color: #c5d4c7;
+}
+
+/* Cronograma */
+
+.action-plan .roadmap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* Cards */
+
+.action-plan .roadmap article {
+  border-top: 1px solid #68816e;
+  padding-top: 22px;
+}
+
+/* Períodos */
+
+.action-plan .roadmap span {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #d6ef84;
+}
+
+
+/* Títulos */
+
+.action-plan .roadmap h3 {
+  font-size: 21px;
+  margin: 22px 0 13px;
+}
+
+.action-plan .section-title__heading {
+  color: #fafbf7;
+}
+
+/* Resultados esperados */
+
+.action-plan .roadmap small {
+  font-size: 12px;
+  color: #d6ef84;
+}
+
+
+/* Descrição das etapas */
+.action-plan .roadmap p {
+  font-size: 14px;
+  color: #ccdacd;
+}
+
+/* Bloco de avaliação */
+.action-plan .metrics {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  border-top: 1px solid #68816e;
+  margin-top: 42px;
+  padding-top: 27px;
+}
+
+/* Ajuste de largura */
+
+@media (max-width: 1000px) {
+  .action-plan .wrap {
+    width: calc(100% - 48px);
+  }
+}
+
+
+@media (max-width: 900px) {
+  .action-plan .roadmap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .action-plan .wrap {
+    width: calc(100% - 40px);
+  }
+
+  .action-plan .roadmap,
+  .action-plan .metrics {
+    grid-template-columns: 1fr;
+  }
+}
