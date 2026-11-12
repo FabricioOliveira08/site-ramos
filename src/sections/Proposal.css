@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* Container da seção */
+
+.proposal {
+  width: min(1180px, calc(100% - 80px));
+  margin-inline: auto;
+  padding-block: 86px;
+  font-family: 'DM Sans', sans-serif;}
+
+/* Grid dos três pilares */
+
+.proposal .three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  color: #35413b;
+}
+
+/* Cards */
+
+.proposal .plain-card {
+  border-top: 1px solid #afbdab;
+  padding-top: 22px;
+}
+
+/* Numeração */
+
+.proposal .index {
+  font-size: 13px;
+  color: #6a804e;
+}
+
+/* Títulos */
+
+.proposal .plain-card h3 {
+  margin-top: 26px;
+  font-size: 21px;
+}
+
+/* Descrições */
+
+.proposal .plain-card p {
+  color: #54665d;
+}
+
+/* Observação final */
+
+.proposal .note {
+  padding: 23px 26px;
+  border-left: 3px solid #718f44;
+  background: #edf1e7;
+  margin-top: 35px;
+  font-size: 14px;
+  color: #35413b;
+}
