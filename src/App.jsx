@@ -5,6 +5,7 @@ import PrinciplesBar from "./sections/PrinciplesBar";
 import Proposal from "./sections/Proposal";
 import PilotTrail from "./sections/PilotTrail";
 import ActionPlan from "./sections/ActionPlan";
+import Team from "./sections/Team";
 
 import "./App.css";
 
@@ -19,6 +20,7 @@ function App() {
         <Proposal />
         <PilotTrail />
         <ActionPlan />
+        <Team />
       </main>
 
       <Footer />

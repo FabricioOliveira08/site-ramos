@@ -160,3 +160,28 @@ export const actionPlanSteps = [
     output: "relato curto de resultados.",
   },
 ];
+
+
+export const teamMembers = [
+  {
+    initials: "JY",
+    name: "José Yago",
+    role: "CONCEPÇÃO PEDAGÓGICA",
+    description:
+      "Organizar a trilha, produzir materiais e articular a revisão do conteúdo com professores.",
+  },
+  {
+    initials: "IO",
+    name: "Igor",
+    role: "IMPLEMENTAÇÃO TÉCNICA",
+    description:
+      "Apoiar protótipos, infraestrutura necessária e possibilidades de aproximação com profissionais.",
+  },
+  {
+    initials: "FO",
+    name: "Fabrício",
+    role: "OPERAÇÃO DO PILOTO",
+    description:
+      "Coordenar disponibilidade, espaço, organização dos encontros e aproximação com participantes.",
+  },
+];

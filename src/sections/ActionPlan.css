@@ -3,6 +3,9 @@
 /* Seção Plano de Ação */
 
 .action-plan {
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
   background: #143b2e;
   color: #fafbf7;
   padding-block: 86px;
@@ -99,19 +102,16 @@
 }
 
 
+/* Tablets */
 @media (max-width: 900px) {
   .action-plan .roadmap {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
+/* Celulares */
 @media (max-width: 600px) {
-  .action-plan .wrap {
-    width: calc(100% - 40px);
-  }
-
-  .action-plan .roadmap,
-  .action-plan .metrics {
-    grid-template-columns: 1fr;
+  .action-plan {
+    padding-block: 60px;
   }
 }
