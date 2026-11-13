@@ -185,3 +185,35 @@ export const teamMembers = [
       "Coordenar disponibilidade, espaço, organização dos encontros e aproximação com participantes.",
   },
 ];
+
+
+export const horizonsIdeas = [
+  {
+    id: "trilha",
+    phase: "PRIORIDADE ATUAL",
+    title: "Trilha e materiais abertos",
+    description:
+      "Validar lógica aplicada à programação. Transformar os materiais revisados em um acervo reutilizável, com autoria e condições de uso definidas.",
+  },
+  {
+    id: "comunidade",
+    phase: "DEPOIS DO PILOTO",
+    title: "Comunidade e parcerias",
+    description:
+      "Convidar colaboradores por demanda, avaliar ações de extensão e conversar com profissionais. Instagram, e-mail e site passam a divulgar entregas reais.",
+  },
+  {
+    id: "exploracao",
+    phase: "EXPLORAÇÃO FUTURA",
+    title: "Explorando a Computação",
+    description:
+      "Promover encontros e experiências práticas para apresentar diferentes áreas da computação. A proposta é ajudar estudantes iniciantes a descobrir interesses, conhecer possibilidades de atuação e construir seus próprios caminhos de aprendizagem.",
+  },
+  {
+    id: "identidade",
+    phase: "DECISÃO EM ABERTO",
+    title: "Identidade e institucionalização",
+    description:
+      "Escolher entre autonomia e colaboração com uma iniciativa existente. Definir nome, regras e possível estrutura de ensino, pesquisa, extensão e comunicação após validar a atuação do núcleo.",
+  },
+];

@@ -6,6 +6,8 @@ import Proposal from "./sections/Proposal";
 import PilotTrail from "./sections/PilotTrail";
 import ActionPlan from "./sections/ActionPlan";
 import Team from "./sections/Team";
+import Horizons from "./sections/Horizons";
+import Professors from "./sections/Professors";
 
 import "./App.css";
 
@@ -21,6 +23,8 @@ function App() {
         <PilotTrail />
         <ActionPlan />
         <Team />
+        <Horizons />
+        <Professors />
       </main>
 
       <Footer />

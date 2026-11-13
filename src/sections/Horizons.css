@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* Seção Horizontes */
+
+.horizons {
+  background: #edf1e8;
+  padding-block: 86px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Container centralizado */
+
+.horizons .wrap {
+  width: min(1180px, calc(100% - 80px));
+  margin: auto;
+}
+
+/* Cabeçalho */
+
+.horizons .section-title {
+  max-width: 680px;
+  margin-bottom: 42px;
+}
+
+/* Grid das ideias */
+
+.horizons .ideas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* Cards */
+
+.horizons .ideas > article {
+  background: #fafbf7;
+  padding: 28px;
+  border: 1px solid #d5dfcf;
+  border-radius: 8px;
+}
+
+/* Etiquetas */
+
+.horizons .pill {
+  display: inline-block;
+  font-size: 10px;
+  background: #d7eab2;
+  padding: 6px 9px;
+  border-radius: 3px;
+  letter-spacing: 0.8px;
+}
+
+/* Títulos */
+
+.horizons .ideas h3 {
+  margin: 24px 0 14px;
+  font-size: 21px;
+  color: #35413b;
+  font-weight: 500;
+}
+
+/* Descrições */
+
+.horizons .ideas p {
+  font-size: 14px;
+  color: #54665d;
+}
+
+/* Responsividade */
+
+@media (max-width: 1000px) {
+  .horizons .wrap {
+    width: calc(100% - 48px);
+  }
+}
+
+@media (max-width: 760px) {
+  .horizons .ideas {
+    grid-template-columns: 1fr;
+  }
+}
