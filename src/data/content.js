@@ -217,3 +217,24 @@ export const horizonsIdeas = [
       "Escolher entre autonomia e colaboração com uma iniciativa existente. Definir nome, regras e possível estrutura de ensino, pesquisa, extensão e comunicação após validar a atuação do núcleo.",
   },
 ];
+
+export const professorRequests = [
+  {
+    number: "01",
+    title: "Revisão pedagógica",
+    description:
+      "O recorte é adequado aos iniciantes? Os exercícios permitem observar aprendizagem?",
+  },
+  {
+    number: "02",
+    title: "Viabilidade do piloto",
+    description:
+      "Qual espaço e horário seriam possíveis? Quem poderia ser um ponto de contato?",
+  },
+  {
+    number: "03",
+    title: "Caminho institucional",
+    description:
+      "Qual formato é adequado para essa iniciativa? Que passos seriam necessários para uma futura formalização?",
+  },
+];

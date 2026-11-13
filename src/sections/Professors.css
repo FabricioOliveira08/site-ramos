@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* Seção Para Professores */
+
+.professors {
+    width: min(1180px, calc(100% - 80px));
+    margin: auto;
+    padding-block: 86px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Layout principal */
+
+.professor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.professor p {
+    color: #54665d;
+}
+
+/* Pedidos aos professores */
+
+.asks article {
+    display: flex;
+    gap: 22px;
+    padding: 21px 0;
+    border-bottom: 1px solid var(--line, #dce3d9);
+}
+
+/* Numeração */
+
+.asks article > span {
+    font-size: 13px;
+    color: #788957;
+}
+
+/* Títulos */
+
+.asks h3 {
+    font-size: 18px;
+    margin: 0 0 6px;
+    color: #35413b;
+    font-weight: 500;
+
+}
+
+/* Descrições */
+
+.asks p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Destaque no título */
+
+.professors .section-title__heading .professors-highlight {
+    display: inline;
+    color: #638437;
+}
+
+/* Numeração circular */
+
+.professors .asks article > .ask-number {
+    flex: 0 0 34px;
+
+    width: 34px;
+    height: 34px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+    background: #d7eab2;
+    color: #143b2e;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Conteúdo dos pedidos */
+
+.professors .asks article > div {
+    flex: 1;
+    min-width: 0;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 1000px) {
+  .professors {
+    width: calc(100% - 48px);
+  }
+
+  .professor {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 760px) {
+  .professor {
+    grid-template-columns: 1fr;
+  }
+}
