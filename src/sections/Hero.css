@@ -73,3 +73,21 @@ h1 em {
     gap: 35px;
   }
 }
+
+/* Celulares */
+@media (max-width: 760px) {
+  .hero.wrap {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
+  }
+
+  .hero > * {
+    min-width: 0;
+  }
+
+  .hero .path-board {
+    width: 100%;
+    max-width: 100%;
+    transform: none;
+  }
+}

@@ -25,3 +25,23 @@
   content: "+";
   margin-right: 16px;
 }
+
+
+/* Responsividade */
+
+@media (max-width: 760px) {
+  .ribbon .wrap {
+    width: calc(100% - 48px);
+
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    gap: 14px;
+    padding-block: 22px;
+  }
+
+  .ribbon span::before {
+    margin-right: 12px;
+  }
+}

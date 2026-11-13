@@ -54,3 +54,11 @@
   font-size: 14px;
   color: #35413b;
 }
+
+/* Responsividade da proposta */
+@media (max-width: 760px) {
+  #proposta .three {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+}
